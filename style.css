@@ -1,5 +1,5 @@
 body {
-    background-color: wheat;
+    background-image:linear-gradient(to left,  wheat , rgb(244, 217, 145)  );
     margin: 0;
 }
 
@@ -11,12 +11,10 @@ body {
     background-image: linear-gradient(to left, black, rgb(54, 54, 54)) ;
     width: 100%;
     height: 100vh;
-    max-width: 20rem;
+    max-width: 21rem;
     border: 1rem solid black;
-
-    
-
 }
+
 
 
 
@@ -43,27 +41,26 @@ body {
 .menu-Items {
     list-style: none;
     margin: 15px 0;
-    font-size: 16px;
+    font-size: 2.2rem;
     cursor: pointer;
 
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease, 0.5s;
 }
 
-.menu-Items::before {
-    content: "< ";
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
+
 
 .menu-Items:hover {
+    transition: 0.5s;
+    padding-left: 1.1rem;
+    color: wheat;
     transform: scale(1.1);
     opacity: 0.8;
 }
 
+
+
 /* simbol muncul pas hover */
-.menu-Items:hover::before {
-    opacity: 1;
-}
+
 
 .Home {
     padding: 3rem;
@@ -105,3 +102,51 @@ body {
     font-size: 1.5rem;
     font-style: italic;
 }
+
+
+.kaki {
+    color: aliceblue;
+    text-align: center;
+    max-width: 21rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* Login Form */
+
+.KotakLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20rem;
+}
+
+.KotakLogin_Mini {
+   background-image:linear-gradient(to left,  wheat , rgb(244, 217, 145)  );
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: 1rem solid black;
+    padding: 2.5rem;
+    box-shadow: 5rem;
+    border-radius: 20px;
+}
+
+.TeksLogin {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: #5d4f36;
+}
+
+
+
+
+
+
+
+
+
